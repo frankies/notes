@@ -46,14 +46,14 @@
 
 **5. Key class or methods of server-side**
  
- - Authorization code process endpoint (Context path `/oauth/authorize` "[AuthorizationEndpoint](pic/authoiztionEndpoint.png)
+ - Authorization code process endpoint (Context path `/oauth/authorize` "![AuthorizationEndpoint](pic/authoiztionEndpoint.png)
 
 > `org.springframework.security.oauth2.provider.endpoint.AuthorizationEndpoint`
 
  
 - Spring security filter chain 
   
-   see [SpringSecurityFilterChain](pic/SpringSecurityFilterChain.png )
+   see ![SpringSecurityFilterChain](pic/SpringSecurityFilterChain.png )
  
 
 - Password encoder
@@ -68,4 +68,4 @@
 
 **6. Main key points**
 
-- How `ProviderManager` to created? [Answer](pic/HowProviderManagerCreated.png) 
+- How `ProviderManager` to created? ![Answer](pic/HowProviderManagerCreated.png) 
