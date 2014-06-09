@@ -63,8 +63,39 @@
   <2> Md5PasswordEncoder
 
   <3> ShaPasswordEncoder
-	
+
+- Token endpoint of resource server side.
+
+ - **Supper class** :
+ `org.springframework.security.oauth2.provider.endpoint.AbstractEndpoint`
+
+ - **Subclass** : 
+  	
+	`org.springframework.security.oauth2.provider.endpoint.AuthorizationEndpoint`("***/oauth/authorize***")
+    
+	`org.springframework.security.oauth2.provider.endpoint.TokenEndpoint`("***/oauth/token***")
+
+- Token granter
+ - Interface : `org.springframework.security.oauth2.provider.TokenGranter`  
  
+- Key generator of token store
+ 
+	`org.springframework.security.oauth2.provider.token.DefaultAuthenticationKeyGenerator`
+
+	![DefaultAuthenticationKeyGenerator](pic/default_authentication_key_generator.png)
+
+
+- The previous request store and restore in session
+
+  -	Save in session when it's not 'stateless' and 'AuthenticationException' type exception occurses in the web proccessing.
+  	
+![Save request](pic/storeRequest.png)
+
+
+  -	Restore the request from session
+  
+![Restore request](pic/restoreRequest.png)
+
 
 **6. Main key points**
 
